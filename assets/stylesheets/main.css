@@ -1,61 +1,78 @@
-.container {
-  display: flex;
+.border{
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: auto;
+  padding: 3em;
+  text-align: center;
+}
+.title,h1{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  vertical-align: text-top;
 }
 
-.flex-item {
-  flex-grow: 1;
-}
 
-.fixed {
-  width: 100px;
-}
-
-.grid-container {
+#grid {
   display: grid;
-  border: 3px solid black;
-  grid-column-gap: 20px;
-  grid-template-columns: 30px 30px 30px 30px 30px 30px;
-  background-color: white;
-  width: min-content;
+  height: 100px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 100px;
+}
+
+.graph {
+  display:block;
+  width: 800px;
   height: fit-content;
-  margin-left: 20px;
 }
 
-.grid-x-axis {
-  grid-area: footer;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+.graph caption {
+  display: block;
+	font:bold 150%/120% arial,helvetica,sans-serif;
+	padding-bottom:0.33em;
 }
 
-.grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  background-image: linear-gradient(bottom, red, red 20%, transparent 20%, transparent 100%);
-  background-image: -webkit-linear-gradient(bottom, red, red 20%, transparent 20%, transparent 100%);
-  padding-bottom: 0px;
-  padding-top: 400px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.bar-text {
-  color: white;
-  font-size: 20px;
+.graph head{
+  display: block;
   text-align: center;
 }
 
-.center {
+.graph tbody{
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 3em 0 10em 0em; /* top right bottom left */
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(2em,1fr));
+  column-gap: 1em;
+}
+
+.graph tr{
+  text-align: center;
+  margin:inherit;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.graph td{
   margin: auto;
-  padding: 10px;
-  width: 60%;
+  text-align: center;
+  color: white;
 }
 
-#y-axis-align{
-text-align: center;
-vertical-align: middle;
-line-height: 431px; 
+.item1{
+  background-color: red;
 }
 
-.rotate {
-  transform: rotate(-90deg);
+.item2{
+  background-color: blue;
 }
 
+.item3{
+  background-color: yellow;
+}
 
+.item4{
+  background-color: green;
+}
