@@ -13,17 +13,10 @@
 }
 
 
-#grid {
-  display: grid;
-  height: 100px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 100px;
-}
-
 .graph {
   display:block;
   width: 800px;
-  height: fit-content;
+  height: 600px;
 }
 
 .graph caption {
@@ -38,21 +31,35 @@
 }
 
 .graph tbody{
+  bottom: 10px;
   text-align: center;
+  align-items: end;
   width: auto;
   height: auto;
-  margin: 3em 0 10em 0em; /* top right bottom left */
+  margin: 150px 0 3em 0em; /* top right bottom left */
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(2em,1fr));
   column-gap: 1em;
+  background:repeating-linear-gradient(
+    180deg,
+    rgba(170,170,170,0.7) 0,
+    rgba(170,170,170,0.7) 1px,
+    transparent 1px,
+    transparent 20%
+  );
+}
+
+.graph thead{
+  margin-bottom: 20px;
 }
 
 .graph tr{
+  display: block;
+  position: relative;
   text-align: center;
   margin:inherit;
   border: 2px solid black;
   border-radius: 5px;
-  height: 100%;
 }
 
 .graph td{
@@ -63,16 +70,20 @@
 
 .item1{
   background-color: red;
+  height: 100%;
 }
 
 .item2{
   background-color: blue;
+  height: 85%;
 }
 
 .item3{
   background-color: yellow;
+  height: 50%;
 }
 
 .item4{
   background-color: green;
+  height: 25%;
 }
