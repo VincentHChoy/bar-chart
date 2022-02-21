@@ -1,11 +1,12 @@
-.border{
+.border {
   border: 2px solid black;
   border-radius: 5px;
   margin: auto;
   padding: 3em;
   text-align: center;
 }
-.title,h1{
+
+.title, h1 {
   margin: auto;
   width: 50%;
   text-align: center;
@@ -14,76 +15,78 @@
 
 
 .graph {
-  display:block;
+  display: block;
   width: 800px;
   height: 600px;
 }
 
 .graph caption {
   display: block;
-	font:bold 150%/120% arial,helvetica,sans-serif;
-	padding-bottom:0.33em;
+  font: bold 150%/120% arial, helvetica, sans-serif;
+  padding-bottom: 0.33em;
 }
 
-.graph head{
+.graph head {
   display: block;
   text-align: center;
 }
 
-.graph tbody{
+.graph tbody {
   bottom: 10px;
   text-align: center;
   align-items: end;
   width: auto;
   height: auto;
-  margin: 150px 0 3em 0em; /* top right bottom left */
+  margin: 150px 0 3em 0em;
+  /* top right bottom left */
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(2em,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(2em, 1fr));
   column-gap: 1em;
-  background:repeating-linear-gradient(
-    180deg,
-    rgba(170,170,170,0.7) 0,
-    rgba(170,170,170,0.7) 1px,
-    transparent 1px,
-    transparent 20%
-  );
+  background: repeating-linear-gradient(180deg,
+      rgba(170, 170, 170, 0.7) 0,
+      rgba(170, 170, 170, 0.7) 1px,
+      transparent 1px,
+      transparent 20%);
 }
 
-.graph thead{
+.graph thead {
   margin-bottom: 20px;
+  border-collapse: separate;
+  border-spacing: 80px .0em;
+
 }
 
-.graph tr{
+.graph tr {
   display: block;
   position: relative;
   text-align: center;
-  margin:inherit;
+  margin: inherit;
   border: 2px solid black;
   border-radius: 5px;
 }
 
-.graph td{
+.graph td {
   margin: auto;
   text-align: center;
   color: white;
 }
 
-.item1{
+.item1 {
   background-color: red;
   height: 0%;
 }
 
-.item2{
+.item2 {
   background-color: blue;
   height: 0%;
 }
 
-.item3{
+.item3 {
   background-color: yellow;
   height: 0%;
 }
 
-.item4{
+.item4 {
   background-color: green;
   height: 0%;
 }
